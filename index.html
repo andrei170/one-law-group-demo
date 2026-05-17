@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Law Group &middot; 96 Years from De Pere</title>
+<meta name="description" content="One Law Group, S.C. has served Northeast Wisconsin since 1930, when William Morris hung his shingle in historic De Pere. Three offices, ten attorneys, seven practice areas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0f2542;
+    --navy-deep: #0a1a30;
+    --navy-soft: #1d3557;
+    --gold: #b8893c;
+    --gold-warm: #c89c4d;
+    --gold-soft: #e8d4a5;
+    --ivory: #f7f3eb;
+    --ivory-soft: #fbf8f2;
+    --paper: #ffffff;
+    --ink: #1a1a1a;
+    --ink-soft: #444444;
+    --rule: #d8cfb9;
+    --rule-soft: #ece5d2;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--ink);
+    background: var(--ivory-soft);
+    line-height: 1.65;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--navy); text-decoration: none; }
+  a:hover { color: var(--gold); }
+  .container { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
+  .section { padding: 90px 0; }
+  .section-tight { padding: 60px 0; }
+
+  /* HEADER */
+  header.site {
+    background: var(--paper);
+    border-bottom: 1px solid var(--rule-soft);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .brand {
+    font-weight: 700;
+    font-size: 19px;
+    color: var(--navy);
+    letter-spacing: 0.02em;
+  }
+  .brand small {
+    display: block;
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--gold);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+  }
+  .nav ul a {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--navy-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .nav ul a:hover { color: var(--gold); }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 60%, var(--navy-soft) 100%);
+    color: var(--ivory);
+    padding: 120px 0 100px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: -120px;
+    right: -120px;
+    width: 480px;
+    height: 480px;
+    background: radial-gradient(circle, rgba(200,156,77,0.18), transparent 65%);
+    pointer-events: none;
+  }
+  .hero-eyebrow {
+    display: inline-block;
+    color: var(--gold-warm);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    border: 1px solid var(--gold);
+    padding: 7px 16px;
+    border-radius: 2px;
+    margin-bottom: 28px;
+  }
+  .hero h1 {
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 26px;
+    max-width: 900px;
+  }
+  .hero h1 strong { color: var(--gold-warm); font-weight: 800; }
+  .hero-lede {
+    font-size: 19px;
+    color: var(--ivory);
+    max-width: 760px;
+    margin-bottom: 56px;
+    opacity: 0.92;
+  }
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    max-width: 820px;
+  }
+  .stat-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(200,156,77,0.28);
+    padding: 28px 24px;
+    border-radius: 4px;
+  }
+  .stat-num {
+    font-size: 44px;
+    font-weight: 800;
+    color: var(--gold-warm);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .stat-label {
+    font-size: 13px;
+    color: var(--ivory);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.85;
+  }
+
+  /* TRUST BAND */
+  .trust-band {
+    background: var(--navy-deep);
+    padding: 26px 0;
+    border-top: 1px solid rgba(200,156,77,0.22);
+  }
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+  }
+  .chip {
+    color: var(--ivory);
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    padding: 7px 16px;
+    background: rgba(200,156,77,0.08);
+    border: 1px solid rgba(200,156,77,0.25);
+    border-radius: 100px;
+  }
+  .chip strong { color: var(--gold-warm); font-weight: 600; }
+
+  /* SECTION TITLES */
+  .kicker {
+    font-size: 12px;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+  h2 {
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+    margin-bottom: 22px;
+    max-width: 820px;
+  }
+  h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 12px;
+    line-height: 1.3;
+  }
+  .lede {
+    font-size: 18px;
+    color: var(--ink-soft);
+    max-width: 780px;
+    margin-bottom: 36px;
+  }
+
+  /* HERITAGE */
+  .heritage {
+    background: var(--paper);
+    border-top: 1px solid var(--rule-soft);
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .heritage-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 70px;
+    align-items: start;
+  }
+  .heritage p {
+    font-size: 17px;
+    color: var(--ink-soft);
+    margin-bottom: 20px;
+  }
+  .heritage p strong { color: var(--navy); font-weight: 600; }
+  .timeline {
+    background: var(--ivory);
+    border-left: 3px solid var(--gold);
+    padding: 32px 32px;
+    border-radius: 0 4px 4px 0;
+  }
+  .timeline-item {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .timeline-item:last-child { border-bottom: none; }
+  .timeline-year {
+    color: var(--gold);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+  }
+  .timeline-event {
+    color: var(--navy);
+    font-size: 15px;
+    margin-top: 4px;
+  }
+
+  /* ATTORNEYS */
+  .attorneys {
+    background: var(--ivory-soft);
+  }
+  .attorney-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .attorney-card {
+    background: var(--paper);
+    border: 1px solid var(--rule-soft);
+    padding: 32px 28px;
+    border-radius: 4px;
+    transition: transform 0.2s, border-color 0.2s;
+  }
+  .attorney-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--gold);
+  }
+  .attorney-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-soft) 100%);
+    color: var(--gold-warm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+    margin-bottom: 20px;
+    border: 2px solid var(--gold);
+  }
+  .attorney-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+  .attorney-role {
+    font-size: 13px;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+  .attorney-blurb {
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.65;
+  }
+  .attorney-card.placeholder {
+    background: linear-gradient(135deg, var(--ivory) 0%, var(--paper) 100%);
+    border: 1px dashed var(--gold);
+  }
+  .attorney-card.placeholder .attorney-avatar {
+    background: var(--ivory);
+    color: var(--gold);
+    border: 2px dashed var(--gold);
+  }
+
+  /* PRACTICE AREAS */
+  .practice {
+    background: var(--paper);
+  }
+  .practice-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+  .practice-card {
+    background: var(--ivory-soft);
+    border: 1px solid var(--rule-soft);
+    border-left: 4px solid var(--gold);
+    padding: 28px 26px;
+    border-radius: 0 4px 4px 0;
+    transition: background 0.2s, border-left-width 0.2s;
+  }
+  .practice-card:hover {
+    background: var(--paper);
+    border-left-width: 7px;
+  }
+  .practice-icon {
+    color: var(--gold);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    margin-bottom: 12px;
+    display: block;
+  }
+  .practice-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 10px;
+  }
+  .practice-desc {
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+
+  /* LOCATIONS */
+  .locations {
+    background: var(--navy-deep);
+    color: var(--ivory);
+  }
+  .locations h2 { color: var(--ivory); }
+  .locations .kicker { color: var(--gold-warm); }
+  .locations .lede { color: rgba(247,243,235,0.85); }
+  .location-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+    margin-top: 36px;
+  }
+  .location-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(200,156,77,0.3);
+    padding: 36px 30px;
+    border-radius: 4px;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .location-card:hover {
+    border-color: var(--gold-warm);
+    transform: translateY(-3px);
+  }
+  .location-tag {
+    color: var(--gold-warm);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .location-city {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--ivory);
+    margin-bottom: 14px;
+  }
+  .location-addr {
+    font-size: 15px;
+    color: var(--ivory);
+    opacity: 0.88;
+    margin-bottom: 18px;
+    line-height: 1.6;
+  }
+  .location-phone {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--gold-warm);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    padding-top: 12px;
+    border-top: 1px solid rgba(200,156,77,0.2);
+  }
+
+  /* AUDIT TABLE */
+  .audit {
+    background: var(--ivory-soft);
+  }
+  .audit-table {
+    background: var(--paper);
+    border: 1px solid var(--rule-soft);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 24px;
+  }
+  .audit-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .audit-table thead {
+    background: var(--navy);
+    color: var(--ivory);
+  }
+  .audit-table th {
+    padding: 16px 22px;
+    text-align: left;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 600;
+  }
+  .audit-table td {
+    padding: 18px 22px;
+    border-top: 1px solid var(--rule-soft);
+    font-size: 15px;
+    color: var(--ink);
+    vertical-align: top;
+  }
+  .audit-table tr:hover td { background: var(--ivory-soft); }
+  .audit-query {
+    color: var(--navy);
+    font-weight: 600;
+  }
+  .badge-miss {
+    display: inline-block;
+    background: rgba(184,137,60,0.12);
+    color: var(--gold);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    padding: 4px 12px;
+    border-radius: 100px;
+    border: 1px solid rgba(184,137,60,0.3);
+  }
+  .audit-summary {
+    background: var(--navy);
+    color: var(--ivory);
+    padding: 22px 26px;
+    margin-top: 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    border-left: 4px solid var(--gold);
+  }
+  .audit-summary strong { color: var(--gold-warm); }
+
+  /* BUILD PLAN */
+  .build {
+    background: var(--paper);
+  }
+  .build-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top: 36px;
+  }
+  .build-card {
+    background: var(--ivory-soft);
+    border: 1px solid var(--rule-soft);
+    padding: 32px 30px;
+    border-radius: 4px;
+    position: relative;
+    padding-left: 80px;
+  }
+  .build-num {
+    position: absolute;
+    left: 26px;
+    top: 30px;
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .build-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 10px;
+  }
+  .build-desc {
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.65;
+  }
+
+  /* WHY NOW */
+  .why-now {
+    background: var(--ivory);
+    border-top: 1px solid var(--rule-soft);
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+    align-items: start;
+  }
+  .why-grid p {
+    font-size: 17px;
+    color: var(--ink-soft);
+    margin-bottom: 20px;
+  }
+  .why-grid p strong { color: var(--navy); font-weight: 600; }
+  .why-aside {
+    background: var(--paper);
+    border-left: 3px solid var(--gold);
+    padding: 30px;
+  }
+  .why-aside-title {
+    font-size: 12px;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+  .why-aside p {
+    font-size: 15px;
+    color: var(--ink-soft);
+    margin-bottom: 14px;
+  }
+
+  /* FAQ */
+  .faq {
+    background: var(--paper);
+  }
+  .faq-list {
+    margin-top: 24px;
+    max-width: 880px;
+  }
+  .faq-item {
+    border-bottom: 1px solid var(--rule-soft);
+    padding: 26px 0;
+  }
+  .faq-q {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 12px;
+  }
+  .faq-q::before {
+    content: "Q";
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--gold);
+    color: var(--paper);
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 26px;
+    margin-right: 12px;
+    vertical-align: middle;
+  }
+  .faq-a {
+    font-size: 16px;
+    color: var(--ink-soft);
+    padding-left: 38px;
+    line-height: 1.7;
+  }
+
+  /* CTA */
+  .cta {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%);
+    color: var(--ivory);
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(200,156,77,0.12), transparent 65%);
+    pointer-events: none;
+  }
+  .cta h2 {
+    color: var(--ivory);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 42px;
+    position: relative;
+  }
+  .cta p {
+    font-size: 18px;
+    color: rgba(247,243,235,0.88);
+    max-width: 700px;
+    margin: 0 auto 36px;
+    position: relative;
+  }
+  .cta-actions {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .btn {
+    display: inline-block;
+    padding: 16px 36px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    transition: transform 0.2s, background 0.2s;
+  }
+  .btn-primary {
+    background: var(--gold);
+    color: var(--navy-deep);
+  }
+  .btn-primary:hover {
+    background: var(--gold-warm);
+    color: var(--navy-deep);
+    transform: translateY(-2px);
+  }
+  .btn-outline {
+    background: transparent;
+    color: var(--ivory);
+    border: 1px solid rgba(255,255,255,0.4);
+  }
+  .btn-outline:hover {
+    background: rgba(255,255,255,0.08);
+    color: var(--gold-warm);
+    transform: translateY(-2px);
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--navy-deep);
+    color: rgba(247,243,235,0.7);
+    padding: 60px 0 36px;
+    font-size: 14px;
+    border-top: 1px solid rgba(200,156,77,0.2);
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 40px;
+  }
+  .footer-grid h4 {
+    color: var(--gold-warm);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+  .footer-grid p, .footer-grid a {
+    color: rgba(247,243,235,0.75);
+    line-height: 1.7;
+    display: block;
+    margin-bottom: 4px;
+  }
+  .footer-grid a:hover { color: var(--gold-warm); }
+  .footer-bar {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 26px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 18px;
+    font-size: 12px;
+    color: rgba(247,243,235,0.55);
+  }
+  .disclaimer {
+    font-size: 11px;
+    color: rgba(247,243,235,0.5);
+    line-height: 1.6;
+    margin-top: 14px;
+    max-width: 100%;
+  }
+  .signoff a {
+    color: var(--gold-warm);
+    font-weight: 600;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 880px) {
+    .hero h1 { font-size: 36px; }
+    .hero-lede { font-size: 17px; }
+    h2 { font-size: 30px; }
+    .nav ul { display: none; }
+    .stat-row, .attorney-grid, .practice-grid, .location-grid,
+    .build-grid, .heritage-grid, .why-grid, .footer-grid {
+      grid-template-columns: 1fr;
+    }
+    .section { padding: 60px 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site">
+  <div class="container">
+    <nav class="nav">
+      <div class="brand">
+        One Law Group, S.C.
+        <small>Est. 1930 &middot; De Pere, Wisconsin</small>
+      </div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#attorneys">Attorneys</a></li>
+        <li><a href="#practice">Practice</a></li>
+        <li><a href="#locations">Locations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <span class="hero-eyebrow">96 Years &middot; Three Cities &middot; Ten Attorneys</span>
+    <h1>1930. William Morris hung his shingle in De Pere. <strong>96 years later, the firm still serves three cities.</strong></h1>
+    <p class="hero-lede">A fresh University of Wisconsin Law graduate, William Morris opened a small office in historic De Pere in 1930. Through every decade since, the firm has carried forward the same standard: enduring client relationships spanning generations across Northeast Wisconsin.</p>
+    <div class="stat-row">
+      <div class="stat-card">
+        <div class="stat-num">96</div>
+        <div class="stat-label">Years Practicing</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">10</div>
+        <div class="stat-label">Attorneys on Roster</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">3</div>
+        <div class="stat-label">Wisconsin Offices</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAND -->
+<div class="trust-band">
+  <div class="container">
+    <div class="chips">
+      <span class="chip"><strong>Founded 1930</strong> &middot; De Pere</span>
+      <span class="chip">William Morris &middot; <strong>UW Law grad</strong></span>
+      <span class="chip">3 locations &middot; NE Wisconsin</span>
+      <span class="chip"><strong>7</strong> practice areas</span>
+      <span class="chip">info@onelawgroupsc.com</span>
+    </div>
+  </div>
+</div>
+
+<!-- HERITAGE -->
+<section class="section heritage" id="about">
+  <div class="container">
+    <div class="heritage-grid">
+      <div>
+        <p class="kicker">The Founding Story</p>
+        <h2>Why De Pere 1930 matters.</h2>
+        <p>In 1930, a young University of Wisconsin Law graduate named <strong>William Morris</strong> hung his shingle outside a small office in historic De Pere, Wisconsin. He had no roster, no reputation, and no inherited practice. What he had was a degree, a town that needed counsel, and a willingness to serve neighbors on the matters that defined their lives.</p>
+        <p>Ninety-six years later, the firm he founded continues to operate under that same standard. <strong>One Law Group, S.C.</strong> traces an unbroken line of stewardship from that 1930 De Pere office to the three locations we serve today: Green Bay, Appleton, and Lakewood. Most law firms in the Green Bay metro can trace their roots only a decade or two. One Law Group precedes the practice of nearly every competitor in Northeast Wisconsin by half a century or more.</p>
+        <p>The De Pere origin is not a marketing line. It distinguishes the firm from every Green Bay-only practice, every recent Appleton entrant, and every regional chain. A firm that has practiced through the Depression, two world wars, and the entire arc of modern Wisconsin jurisprudence brings a kind of context to a family-law matter or a real-estate closing that a five-year-old shop simply cannot. That context is the inheritance William Morris left behind.</p>
+        <p>The tagline the firm uses today, <strong>"enduring client relationships spanning generations,"</strong> reflects an operating reality. Many of the families One Law Group represents in 2026 are the grandchildren and great-grandchildren of the families William Morris first served from De Pere in the 1930s and 1940s. That continuity is the moat.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">1930</div>
+          <div class="timeline-event">William Morris, fresh UW Law graduate, opens a small office in historic De Pere, Wisconsin.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">Mid-century</div>
+          <div class="timeline-event">The practice grows alongside the De Pere and Green Bay community, building the multi-generational client base that defines the firm today.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">Late 20th c.</div>
+          <div class="timeline-event">Practice expands into broader Brown County and Outagamie County matters as the firm adds attorneys and disciplines.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">Present</div>
+          <div class="timeline-event">One Law Group, S.C. operates three Wisconsin offices (Green Bay, Appleton, Lakewood) with ten attorneys across seven practice areas.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ATTORNEYS -->
+<section class="section attorneys" id="attorneys">
+  <div class="container">
+    <p class="kicker">The Roster</p>
+    <h2>Ten attorneys carrying the 1930 line forward.</h2>
+    <p class="lede">Mark A. Bartels, Megan M. Carollo, John P. D'Angelo, and Timothy A. Hawley anchor a roster of ten attorneys serving family law, criminal defense, immigration, personal injury, real estate, business law, and commercial litigation matters across Northeast Wisconsin.</p>
+    <div class="attorney-grid">
+      <div class="attorney-card">
+        <div class="attorney-avatar">MB</div>
+        <div class="attorney-name">Mark A. Bartels</div>
+        <div class="attorney-role">Attorney</div>
+        <div class="attorney-blurb">A member of the One Law Group roster serving Northeast Wisconsin clients across the firm's seven practice areas. Full attorney biography available at onelawgroupsc.com.</div>
+      </div>
+      <div class="attorney-card">
+        <div class="attorney-avatar">MC</div>
+        <div class="attorney-name">Megan M. Carollo</div>
+        <div class="attorney-role">Attorney</div>
+        <div class="attorney-blurb">A member of the One Law Group roster serving Northeast Wisconsin clients across the firm's seven practice areas. Full attorney biography available at onelawgroupsc.com.</div>
+      </div>
+      <div class="attorney-card">
+        <div class="attorney-avatar">JD</div>
+        <div class="attorney-name">John P. D'Angelo</div>
+        <div class="attorney-role">Attorney</div>
+        <div class="attorney-blurb">A member of the One Law Group roster serving Northeast Wisconsin clients across the firm's seven practice areas. Full attorney biography available at onelawgroupsc.com.</div>
+      </div>
+      <div class="attorney-card">
+        <div class="attorney-avatar">TH</div>
+        <div class="attorney-name">Timothy A. Hawley</div>
+        <div class="attorney-role">Attorney</div>
+        <div class="attorney-blurb">A member of the One Law Group roster serving Northeast Wisconsin clients across the firm's seven practice areas. Full attorney biography available at onelawgroupsc.com.</div>
+      </div>
+      <div class="attorney-card placeholder">
+        <div class="attorney-avatar">+6</div>
+        <div class="attorney-name">Six additional attorneys</div>
+        <div class="attorney-role">Full Roster</div>
+        <div class="attorney-blurb">Six additional attorneys round out the ten-lawyer roster supporting the firm's practice across Green Bay, Appleton, and Lakewood. Full roster published at onelawgroupsc.com.</div>
+      </div>
+      <div class="attorney-card placeholder">
+        <div class="attorney-avatar">SC</div>
+        <div class="attorney-name">Support Counsel</div>
+        <div class="attorney-role">Associates &amp; Of Counsel</div>
+        <div class="attorney-blurb">Associate attorneys and of-counsel relationships support the named partners on family law, immigration, personal injury, and commercial litigation matters across the firm's three offices.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRACTICE AREAS -->
+<section class="section practice" id="practice">
+  <div class="container">
+    <p class="kicker">Practice Areas</p>
+    <h2>Seven disciplines under one roof.</h2>
+    <p class="lede">The firm William Morris started in 1930 has grown into a seven-practice group. The breadth means a Green Bay family can come to One Law Group for an estate matter and the same trusted relationship can support a separate business filing, a real-estate closing, or a personal-injury claim later that decade.</p>
+    <div class="practice-grid">
+      <div class="practice-card">
+        <span class="practice-icon">01</span>
+        <div class="practice-title">Family Law</div>
+        <div class="practice-desc">Divorce, custody, child support, paternity, post-judgment modifications, and the full range of Wisconsin family-court matters.</div>
+      </div>
+      <div class="practice-card">
+        <span class="practice-icon">02</span>
+        <div class="practice-title">Criminal Defense</div>
+        <div class="practice-desc">Misdemeanor and felony defense in Brown, Outagamie, and surrounding county courts. OWI, drug offenses, violent crime, and white collar.</div>
+      </div>
+      <div class="practice-card">
+        <span class="practice-icon">03</span>
+        <div class="practice-title">Immigration</div>
+        <div class="practice-desc">Family-based petitions, employment-based visas, naturalization, removal defense, and adjustment of status for Wisconsin residents.</div>
+      </div>
+      <div class="practice-card">
+        <span class="practice-icon">04</span>
+        <div class="practice-title">Personal Injury</div>
+        <div class="practice-desc">Auto collisions, premises liability, wrongful death, and serious-injury matters throughout Northeast Wisconsin. Contingency representation.</div>
+      </div>
+      <div class="practice-card">
+        <span class="practice-icon">05</span>
+        <div class="practice-title">Real Estate</div>
+        <div class="practice-desc">Residential and commercial closings, title review, easement and boundary disputes, landlord-tenant matters, and zoning.</div>
+      </div>
+      <div class="practice-card">
+        <span class="practice-icon">06</span>
+        <div class="practice-title">Business Law</div>
+        <div class="practice-desc">Entity formation, contracts, succession planning, employment, and ongoing counsel for closely-held Wisconsin businesses.</div>
+      </div>
+      <div class="practice-card">
+        <span class="practice-icon">07</span>
+        <div class="practice-title">Commercial Litigation</div>
+        <div class="practice-desc">Contract disputes, partnership disagreements, collection actions, and complex civil matters in state and federal court.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATIONS -->
+<section class="section locations" id="locations">
+  <div class="container">
+    <p class="kicker">Three Offices</p>
+    <h2>Where to find us.</h2>
+    <p class="lede">From the De Pere origin office of 1930 grew a three-city footprint that today serves clients across Brown County, Outagamie County, and the Northwoods of Wisconsin.</p>
+    <div class="location-grid">
+      <div class="location-card">
+        <div class="location-tag">Flagship Office</div>
+        <div class="location-city">Green Bay</div>
+        <div class="location-addr">2181 S Oneida St<br>Green Bay, Wisconsin</div>
+        <div class="location-phone">(920) 336-5766</div>
+      </div>
+      <div class="location-card">
+        <div class="location-tag">Fox Valley</div>
+        <div class="location-city">Appleton</div>
+        <div class="location-addr">Serving Outagamie County and the broader Fox Valley region.</div>
+        <div class="location-phone">(920) 931-3942</div>
+      </div>
+      <div class="location-card">
+        <div class="location-tag">Northwoods</div>
+        <div class="location-city">Lakewood</div>
+        <div class="location-addr">Serving Oconto County and the Northwoods of Wisconsin.</div>
+        <div class="location-phone">(715) 276-6599</div>
+      </div>
+    </div>
+    <div style="margin-top: 36px; text-align: center; color: rgba(247,243,235,0.8); font-size: 15px;">
+      General line: <strong style="color: var(--gold-warm);">866-525-5200</strong> &middot; Email: <strong style="color: var(--gold-warm);">info@onelawgroupsc.com</strong>
+    </div>
+  </div>
+</section>
+
+<!-- AUDIT -->
+<section class="section audit">
+  <div class="container">
+    <p class="kicker">Discoverability Audit</p>
+    <h2>What the search panels say about One Law Group today.</h2>
+    <p class="lede">A 96-year-old firm with three offices and seven practice areas should anchor the answer to the most common legal queries in Northeast Wisconsin. The current discoverability picture tells a different story.</p>
+    <div class="audit-table">
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 45%;">Search query</th>
+            <th style="width: 20%;">Result</th>
+            <th>What the panel cites instead</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="audit-query">"oldest law firm De Pere"</td>
+            <td><span class="badge-miss">Not cited</span></td>
+            <td>De Pere historical pages and generic directory listings; the 1930 founding moment is nowhere surfaced.</td>
+          </tr>
+          <tr>
+            <td class="audit-query">"family law attorney Green Bay"</td>
+            <td><span class="badge-miss">Not cited</span></td>
+            <td>Aggregator panels (Avvo, FindLaw, Justia) and three competing firms with paid placement.</td>
+          </tr>
+          <tr>
+            <td class="audit-query">"law firm Appleton WI"</td>
+            <td><span class="badge-miss">Not cited</span></td>
+            <td>Fox Valley competitors with stronger local-business schema; One Law Group's Appleton office is invisible.</td>
+          </tr>
+          <tr>
+            <td class="audit-query">"personal injury attorney NE Wisconsin"</td>
+            <td><span class="badge-miss">Not cited</span></td>
+            <td>Regional PI volume firms with dedicated landing pages and review-rich profiles.</td>
+          </tr>
+          <tr>
+            <td class="audit-query">"immigration attorney Green Bay"</td>
+            <td><span class="badge-miss">Not cited</span></td>
+            <td>Out-of-market firms ranking on broader Wisconsin queries; One Law Group's immigration practice is unsurfaced.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="audit-summary">
+      <strong>0 of 5</strong> high-intent Northeast Wisconsin legal queries surface One Law Group in the AI answer panel. A 96-year firm with three offices and ten attorneys is invisible to the prospects most actively searching for representation.
+    </div>
+  </div>
+</section>
+
+<!-- BUILD PLAN -->
+<section class="section build">
+  <div class="container">
+    <p class="kicker">What We'd Build</p>
+    <h2>A discoverability infrastructure that matches the 96-year story.</h2>
+    <p class="lede">The work below addresses each gap in the audit table. The goal is to make the answer panels treat One Law Group as the obvious citation for the queries a Northeast Wisconsin legal prospect actually types.</p>
+    <div class="build-grid">
+      <div class="build-card">
+        <span class="build-num">01</span>
+        <div class="build-title">Founder-story 1930 page</div>
+        <div class="build-desc">A dedicated, schema-rich page anchored on William Morris, the UW Law founding, and the De Pere origin. Built to be the answer-panel citation for "oldest law firm De Pere" and "history of law firms Northeast Wisconsin." The 1930 founding date is the firm's strongest single asset and currently it lives on no public page.</div>
+      </div>
+      <div class="build-card">
+        <span class="build-num">02</span>
+        <div class="build-title">Per-attorney schema and bios</div>
+        <div class="build-desc">Ten Person-typed JSON-LD entities, ten standalone bio pages, attorney-specific FAQs, and proper alumniOf / jobTitle markup. Bartels, Carollo, D'Angelo, Hawley and the rest of the roster each become discoverable on their own name plus their specialty.</div>
+      </div>
+      <div class="build-card">
+        <span class="build-num">03</span>
+        <div class="build-title">Three-LocalBusiness setup</div>
+        <div class="build-desc">Distinct LocalBusiness entities for Green Bay (2181 S Oneida), Appleton, and Lakewood with address, phone, hours, and geographic service area schema. Currently the firm presents as one address; the answer panels should know there are three offices serving three regions.</div>
+      </div>
+      <div class="build-card">
+        <span class="build-num">04</span>
+        <div class="build-title">Practice-area funnels</div>
+        <div class="build-desc">Standalone landing pages for family law, personal injury, and immigration. Each funnel carries practice-specific schema, FAQ blocks tied to the questions Wisconsin prospects actually ask, and a clear path into an intake conversation. These three areas have the highest search volume and the most aggressive competitor spend.</div>
+      </div>
+      <div class="build-card">
+        <span class="build-num">05</span>
+        <div class="build-title">Three-office service map</div>
+        <div class="build-desc">A combined map and matrix showing which attorneys see clients at which offices, which counties each office covers, and how a Lakewood inquiry routes through to the Green Bay partners when needed. Helpful to clients, and meaningful to the panels.</div>
+      </div>
+      <div class="build-card">
+        <span class="build-num">06</span>
+        <div class="build-title">Generational-client narrative</div>
+        <div class="build-desc">A storytelling layer that operationalizes the "enduring client relationships spanning generations" tagline. With client permission, we surface the multi-decade representations that prove the line. Hard for any newer firm to imitate.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY NOW -->
+<section class="section why-now">
+  <div class="container">
+    <p class="kicker">Why This, Why Now</p>
+    <h2>The 96-year story is doing no work on the public internet.</h2>
+    <div class="why-grid">
+      <div>
+        <p>A prospective family-law client in De Pere in 2026 does not call the firm a friend's grandfather used in 1968. <strong>They open a search panel and type a question.</strong> Whichever firm the panel cites first gets the consultation. The firm with the 96-year history loses that race to firms with two years on their lease and a sharp local SEO retainer.</p>
+        <p>The asymmetry is fixable. <strong>The 1930 founding moment, the William Morris UW Law fresh-grad story, the De Pere origin office, the three-city footprint, and the multi-generational client base are already true.</strong> They are simply not encoded anywhere a machine reader can find them. No founder-story page, no per-attorney schema, no LocalBusiness markup, no FAQ blocks tied to the queries the firm's prospects are actively typing.</p>
+        <p>Northeast Wisconsin's other regulated heritage practices, the family medical groups, the multi-generational accountancies, and the long-tenured architectural firms, are starting to publish the kind of structured-data infrastructure that the answer panels reward. <strong>The firms that publish first own the panel citation</strong> for the next several years. The window is open now and it narrows quarter by quarter.</p>
+      </div>
+      <aside class="why-aside">
+        <div class="why-aside-title">The leverage point</div>
+        <p>One Law Group already holds the strongest single asset in the regional legal market: a verifiable 1930 De Pere founding, with a named founder, a named law school, and 96 unbroken years of practice.</p>
+        <p>Nothing in this scope is fabrication. The work is making the existing record legible to the systems that decide which firm a prospect calls.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq">
+  <div class="container">
+    <p class="kicker">Frequently Asked</p>
+    <h2>What prospects ask about the firm.</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">How old is One Law Group, S.C.?</div>
+        <div class="faq-a">One Law Group traces its founding to 1930, when William Morris, a fresh University of Wisconsin Law School graduate, hung his shingle outside a small office in historic De Pere, Wisconsin. The firm has practiced continuously for 96 years, making it one of the longest-tenured law practices in Northeast Wisconsin.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Who founded the firm and where?</div>
+        <div class="faq-a">The firm was founded in 1930 by William Morris, a recent University of Wisconsin Law graduate. He opened his first office in historic De Pere, Wisconsin. The De Pere founding distinguishes One Law Group from every Green Bay-only firm in the region and anchors the firm's multi-generational client relationships.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Where are your offices located?</div>
+        <div class="faq-a">One Law Group operates three Wisconsin offices: a Green Bay office at 2181 S Oneida Street (920-336-5766), an Appleton office serving the Fox Valley (920-931-3942), and a Lakewood office serving the Northwoods of Wisconsin (715-276-6599). The general line is 866-525-5200.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How do I reach the firm to discuss a matter?</div>
+        <div class="faq-a">The fastest path is email at info@onelawgroupsc.com or a call to the office nearest your county. Green Bay covers Brown County, Appleton covers Outagamie County and the Fox Valley, and Lakewood covers Oconto County and the surrounding Northwoods. Initial conversations are scheduled at the office most convenient for the client.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+  <div class="container">
+    <h2>96 years of practice. Three offices. One conversation away.</h2>
+    <p>Reach the firm at <strong style="color: var(--gold-warm);">info@onelawgroupsc.com</strong> or by phone at any of the three Wisconsin offices listed above.</p>
+    <div class="cta-actions">
+      <a href="mailto:info@onelawgroupsc.com" class="btn btn-primary">Email info@onelawgroupsc.com</a>
+      <a href="#locations" class="btn btn-outline">View All Three Offices</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>One Law Group, S.C.</h4>
+        <p>Founded 1930 by William Morris, a University of Wisconsin Law graduate, in historic De Pere, Wisconsin. Ninety-six years of practice carried forward by ten attorneys across three Northeast Wisconsin offices.</p>
+        <p style="margin-top: 12px;">info@onelawgroupsc.com &middot; 866-525-5200</p>
+      </div>
+      <div>
+        <h4>Offices</h4>
+        <a href="#locations">Green Bay &middot; (920) 336-5766</a>
+        <a href="#locations">Appleton &middot; (920) 931-3942</a>
+        <a href="#locations">Lakewood &middot; (715) 276-6599</a>
+      </div>
+      <div>
+        <h4>Practice</h4>
+        <a href="#practice">Family Law</a>
+        <a href="#practice">Criminal Defense</a>
+        <a href="#practice">Immigration</a>
+        <a href="#practice">Personal Injury</a>
+        <a href="#practice">Real Estate</a>
+        <a href="#practice">Business Law</a>
+        <a href="#practice">Commercial Litigation</a>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <div>&copy; 2026 One Law Group, S.C. Founded 1930. All rights reserved.</div>
+      <div class="signoff">Discoverability proposal prepared by <a href="https://andrei170.github.io/ag1/#services">AG Consulting</a></div>
+    </div>
+    <p class="disclaimer">
+      ATTORNEY ADVERTISING. The information on this site is for general informational purposes only and is not legal advice. Prior results do not guarantee a similar outcome. No attorney-client relationship is formed by visiting this site or sending an email through it. This communication is intended to comply with Wisconsin Supreme Court Rules of Professional Conduct, including SCR 20:7.1 (Communications concerning a lawyer's services) and SCR 20:7.4 (Communication of fields of practice and specialization). Attorneys listed are licensed to practice in Wisconsin. References to founding history are based on the firm's own published account of its 1930 origin in De Pere by William Morris.
+    </p>
+  </div>
+</footer>
+
+<!-- JSON-LD STRUCTURED DATA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LegalService",
+      "@id": "https://onelawgroupsc.com/#legalservice",
+      "name": "One Law Group, S.C.",
+      "url": "https://onelawgroupsc.com",
+      "email": "info@onelawgroupsc.com",
+      "telephone": "+1-866-525-5200",
+      "foundingDate": "1930-01-01",
+      "founder": {
+        "@type": "Person",
+        "name": "William Morris",
+        "description": "Founder of One Law Group, S.C. A 1930 University of Wisconsin Law School graduate who opened his first office in historic De Pere, Wisconsin.",
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "University of Wisconsin Law School"
+        }
+      },
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "De Pere, Wisconsin",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "De Pere",
+          "addressRegion": "WI",
+          "addressCountry": "US"
+        }
+      },
+      "description": "Northeast Wisconsin law firm founded in 1930 in De Pere by William Morris. Ten attorneys across three offices (Green Bay, Appleton, Lakewood) practicing family law, criminal defense, immigration, personal injury, real estate, business law, and commercial litigation.",
+      "areaServed": [
+        {"@type": "AdministrativeArea", "name": "Brown County, Wisconsin"},
+        {"@type": "AdministrativeArea", "name": "Outagamie County, Wisconsin"},
+        {"@type": "AdministrativeArea", "name": "Oconto County, Wisconsin"}
+      ],
+      "knowsAbout": [
+        "Family Law",
+        "Criminal Defense",
+        "Immigration Law",
+        "Personal Injury",
+        "Real Estate Law",
+        "Business Law",
+        "Commercial Litigation"
+      ],
+      "slogan": "Enduring client relationships spanning generations.",
+      "department": [
+        {"@id": "https://onelawgroupsc.com/#green-bay"},
+        {"@id": "https://onelawgroupsc.com/#appleton"},
+        {"@id": "https://onelawgroupsc.com/#lakewood"}
+      ],
+      "employee": [
+        {"@id": "https://onelawgroupsc.com/#bartels"},
+        {"@id": "https://onelawgroupsc.com/#carollo"},
+        {"@id": "https://onelawgroupsc.com/#dangelo"},
+        {"@id": "https://onelawgroupsc.com/#hawley"}
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://onelawgroupsc.com/#bartels",
+      "name": "Mark A. Bartels",
+      "jobTitle": "Attorney",
+      "worksFor": {"@id": "https://onelawgroupsc.com/#legalservice"}
+    },
+    {
+      "@type": "Person",
+      "@id": "https://onelawgroupsc.com/#carollo",
+      "name": "Megan M. Carollo",
+      "jobTitle": "Attorney",
+      "worksFor": {"@id": "https://onelawgroupsc.com/#legalservice"}
+    },
+    {
+      "@type": "Person",
+      "@id": "https://onelawgroupsc.com/#dangelo",
+      "name": "John P. D'Angelo",
+      "jobTitle": "Attorney",
+      "worksFor": {"@id": "https://onelawgroupsc.com/#legalservice"}
+    },
+    {
+      "@type": "Person",
+      "@id": "https://onelawgroupsc.com/#hawley",
+      "name": "Timothy A. Hawley",
+      "jobTitle": "Attorney",
+      "worksFor": {"@id": "https://onelawgroupsc.com/#legalservice"}
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://onelawgroupsc.com/#green-bay",
+      "name": "One Law Group, S.C. (Green Bay Office)",
+      "telephone": "+1-920-336-5766",
+      "email": "info@onelawgroupsc.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2181 S Oneida St",
+        "addressLocality": "Green Bay",
+        "addressRegion": "WI",
+        "addressCountry": "US"
+      },
+      "parentOrganization": {"@id": "https://onelawgroupsc.com/#legalservice"},
+      "areaServed": "Brown County, Wisconsin"
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://onelawgroupsc.com/#appleton",
+      "name": "One Law Group, S.C. (Appleton Office)",
+      "telephone": "+1-920-931-3942",
+      "email": "info@onelawgroupsc.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Appleton",
+        "addressRegion": "WI",
+        "addressCountry": "US"
+      },
+      "parentOrganization": {"@id": "https://onelawgroupsc.com/#legalservice"},
+      "areaServed": "Outagamie County and Fox Valley, Wisconsin"
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://onelawgroupsc.com/#lakewood",
+      "name": "One Law Group, S.C. (Lakewood Office)",
+      "telephone": "+1-715-276-6599",
+      "email": "info@onelawgroupsc.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lakewood",
+        "addressRegion": "WI",
+        "addressCountry": "US"
+      },
+      "parentOrganization": {"@id": "https://onelawgroupsc.com/#legalservice"},
+      "areaServed": "Oconto County and Northwoods, Wisconsin"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How old is One Law Group, S.C.?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "One Law Group traces its founding to 1930, when William Morris, a fresh University of Wisconsin Law School graduate, hung his shingle outside a small office in historic De Pere, Wisconsin. The firm has practiced continuously for 96 years."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who founded One Law Group and where?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The firm was founded in 1930 by William Morris, a recent University of Wisconsin Law graduate, in historic De Pere, Wisconsin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where are One Law Group's offices located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Three Wisconsin offices: Green Bay at 2181 S Oneida Street (920-336-5766), Appleton (920-931-3942), and Lakewood (715-276-6599). General line 866-525-5200."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I reach One Law Group?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Email info@onelawgroupsc.com or call the office nearest your county: Green Bay for Brown County, Appleton for Outagamie County, Lakewood for Oconto County and the Northwoods."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
